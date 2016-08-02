@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-gem 'mini_magick', '~> 4.3'
+# gem "rmagick"
+# gem 'mini_magick', '~> 4.3'
 gem 'carrierwave'
 gem 'bootstrap-sass'
 gem 'sass-rails'

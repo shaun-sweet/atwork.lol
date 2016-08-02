@@ -13,14 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20160802055505) do
 
-  create_table "images", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "rating"
-    t.string   "filepath",   null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "memes", force: :cascade do |t|
     t.string   "name"
     t.integer  "rating"
@@ -28,14 +20,6 @@ ActiveRecord::Schema.define(version: 20160802055505) do
     t.string   "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-  end
-
-  create_table "pictures", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "rating"
-    t.string   "filepath",   null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
 end

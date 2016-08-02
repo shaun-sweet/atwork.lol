@@ -15,3 +15,17 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+
+
+
+$(document).ready(function(){
+    $('#current-meme').on('click', function(){
+        
+        $.ajax({
+            url: "/meme"
+        }).done(function(res){
+            console.log(res);
+            $('#current-meme').attr('src', res.url);
+        })
+    });
+})

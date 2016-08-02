@@ -13,7 +13,12 @@
     </div>
     <div class="col-md-7"></div>
     <div class="col-md-2">
-      <button class="upload header-item"> UPLOAD </button> 
+      <%= form_for :meme, url: "/meme" do |f| %>
+        <div class="field upload header-item">
+          <%= f.label :image, "Upload", :id => "upload" %><br>
+          <%= f.file_field :image, :style => "display: none;", :onChange =>"javascript: this.form.submit();" %>
+        </div>
+      <% end %>
     </div>
   </header>
   <main class ="container">

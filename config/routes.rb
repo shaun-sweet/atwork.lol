@@ -1,15 +1,8 @@
 Rails.application.routes.draw do
-  get 'meme/show'
-
-  get 'image/create'
   
-  get 'public/index'
-
-  get 'image/show'
+  resource :meme, only: [:show, :create]
   
-  resource :meme
-  
-  root 'public#index'
+  root to: 'memes#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   
