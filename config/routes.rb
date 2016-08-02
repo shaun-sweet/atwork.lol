@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
+  get 'meme/show'
+
   get 'image/create'
   
   get 'public/index'
 
   get 'image/show'
+  
+  resource :meme
   
   root 'public#index'
   # The priority is based upon order of creation: first created -> highest priority.

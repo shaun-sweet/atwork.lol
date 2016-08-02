@@ -7,3 +7,14 @@
     <div class="image-rating row"> 9001 </div>
 </div>
 <div class="col-md-3 ad">ANOTHER AD BITCHES  buy mai shit nao</div>
+
+
+<%= form_tag({controller: "memes", action: "create"}, method: "post") do %>
+    <%= label_tag :name, "Name:" %>
+    <%= text_field_tag :name %>
+    <%= label_tag :description, "Description:" %>
+    <%= text_field_tag :description %>
+    <%= file_field_tag 'attachment' %>
+    
+    <%= submit_tag "Upload" %>
+<% end %>
