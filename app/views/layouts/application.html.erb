@@ -7,9 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <main>
+  <header class="row"> 
+    <div class="col-md-3">
+      <h1 id="logo" class="header-item">At Work Lol </h1>
+    </div>
+    <div class="col-md-7"></div>
+    <div class="col-md-2">
+      <button class="upload header-item"> UPLOAD </button> 
+    </div>
+  </header>
+  <main class ="container">
 
 <%= yield %>
   </main>
+<footer>
+  This is the footer :) ==========D
+</footer>
 </body>
 </html>

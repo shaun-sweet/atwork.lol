@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'carrierwave'
 gem 'bootstrap-sass'
 gem 'sass-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
